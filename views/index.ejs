@@ -1,302 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="author" content="Grayrids">
-<title>Nitin Laptop and Computers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Grayrids">
+        <title>Nitin Laptop and Computers</title>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="/static/css/line-icons.css">
-<link rel="stylesheet" href="/static/css/owl.carousel.css">
-<link rel="stylesheet" href="/static/css/owl.theme.css">
-<link rel="stylesheet" href="/static/css/nivo-lightbox.css">
-<link rel="stylesheet" href="/static/css/magnific-popup.css">
-<link rel="stylesheet" href="/static/css/slicknav.css">
-<link rel="stylesheet" href="/static/css/animate.css">
-<link rel="stylesheet" href="/static/css/main.css">
-<link rel="stylesheet" href="/static/css/responsive.css">
-<style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/line-icons.css">
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/css/owl.theme.css">
+        <link rel="stylesheet" href="/static/css/nivo-lightbox.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/slicknav.css">
+        <link rel="stylesheet" href="/static/css/animate.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">
+        <style>
+                @media screen and (min-width: 480px) {
+                        #l {
+                                height: 60px;
+                                width: 375px;
+                        }
+                }
 
-@media screen and (min-width: 480px) {
-        #l {
-            height: 60px;
-             width: 375px;
-        }
-    }
-    @media screen and (max-width:479px) {
-        #l {
-                height: 30px;
-             width: 200px;
-        }
-    }
-
-</style>
-
-<style>
-
-        @media screen and (min-width: 480px) {
-                #i {
-        width: 350px;
-        height:250px;
-                   }      
-    }
-            @media screen and (max-width:479px) {
-                #i {
-        width: 325px;
-        height:290px;
-                   }
-
-            }
-        
+                @media screen and (max-width:479px) {
+                        #l {
+                                height: 30px;
+                                width: 200px;
+                        }
+                }
         </style>
-        
+
+        <style>
+                @media screen and (min-width: 480px) {
+                        #i {
+                                width: 350px;
+                                height: 250px;
+                        }
+                }
+
+                @media screen and (max-width:479px) {
+                        #i {
+                                width: 325px;
+                                height: 290px;
+                        }
+
+                }
+        </style>
+
 </head>
 
 <body>
-        <!-- Modal Login-->                        
-<div class="container">    
-                    
+        <!-- Modal Login-->
+        <div class="container">
+
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                   <div class="modal-content">
-                                   <div class="modal-header" style="background-color:#61d2b4">
-                                        <h6>Login</h6>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                     </div>
-                                 
-                                <div class="modal-body,input-group input-group-lg">
-                                   <br><br>
-                         
-                                   <form method="post" action = "/app/signin">
-                                     <input type="text" name="userid" class="form-control" placeholder="User Id" style="width:80%; margin-left:10%; border-color: #61d2b4; color:black" required data-error="Please enter your User Id">
-                                     <br><br>
-                                     <input type="password" name="password"  class="form-control" placeholder="Password" style="width:80%; margin-left:10%;border-color: #61d2b4; color:black" required data-error="Please enter your Password">
-                                     <br><br>
-                               
-                                     <input type="submit" style="margin-left: 35%" id ="login_btn" class="filter active btn btn-common" name="" value="Login">    
-                                     <br><br>
-                             <br><br>
-                                                     
-                            </form>
-                                              </div>
-                  </div>
-               </div>
-             </div>
-        
-        </div> 
-        
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                        <div class="modal-header" style="background-color:#61d2b4">
+                                                <h6>Login</h6>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span
+                                                                aria-hidden="true">&times;</span></button>
+                                        </div>
 
-<header id="hero-area" data-stellar-background-ratio="0.5">
+                                        <div class="modal-body,input-group input-group-lg">
+                                                <br><br>
 
-<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-<div class="container">
+                                                <form method="post" action="/app/signin">
+                                                        <input type="text" name="userid" class="form-control"
+                                                                placeholder="User Id"
+                                                                style="width:80%; margin-left:10%; border-color: #61d2b4; color:black"
+                                                                required data-error="Please enter your User Id">
+                                                        <br><br>
+                                                        <input type="password" name="password" class="form-control"
+                                                                placeholder="Password"
+                                                                style="width:80%; margin-left:10%;border-color: #61d2b4; color:black"
+                                                                required data-error="Please enter your Password">
+                                                        <br><br>
 
-<div class="navbar-header">
-<a href="/app/home" class="navbar-brand"><img id="l" src="/static/img/logo4.png" alt="logo"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-<i class="fa fa-menu"></i>
-</button>
-</div>
-<div class="collapse navbar-collapse" id="main-navbar">
-<ul class="navbar-nav mr-auto w-100 justify-content-end">
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#hero-area">Home</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#services">Services</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#features">Features</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#portfolios">Products</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#pricing">Pricing</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#team">Team</a>
-</li>
-<li class="nav-item">
-<a class="nav-link page-scroll" href="#contact">Contact</a>
-</li>
-<li class="nav-item">
+                                                        <input type="submit" style="margin-left: 35%" id="login_btn"
+                                                                class="filter active btn btn-common" name=""
+                                                                value="Login">
+                                                        <br><br>
+                                                        <br><br>
+
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+
+        <header id="hero-area" data-stellar-background-ratio="0.5">
+
+                <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+                        <div class="container">
+
+                                <div class="navbar-header">
+                                        <a href="/app/home" class="navbar-brand"><img id="l" src="/static/img/logo4.png"
+                                                        alt="logo"></a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#main-navbar" aria-controls="main-navbar"
+                                                aria-expanded="false" aria-label="Toggle navigation">
+                                                <i class="fa fa-menu"></i>
+                                        </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="main-navbar">
+                                        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#hero-area">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#services">Services</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#features">Features</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#portfolios">Products</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#team">Team</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                                                </li>
+                                                <!-- <li class="nav-item">
 <a class="nav-link page-scroll" data-toggle="modal" href="#myModal">Login</a>
-</li>
-</ul>
-</div>
-</div>
+</li> -->
+                                        </ul>
+                                </div>
+                        </div>
 
-<ul class="mobile-menu">
-<li>
-<a class="page-scroll" href="#hero-area">Home</a>
-</li>
-<li>
-<a class="page-scroll" href="#services">Services</a>
-</li>
-<li>
-<a class="page-scroll" href="#features">Features</a>
-</li>
-<li>
-<a class="page-scroll" href="#portfolios">Products</a>
-</li>
-<li>
-<a class="page-scroll" href="#pricing">Pricing</a>
-</li>
-<li>
-<a class="page-scroll" href="#team">Team</a>
-</li>
-<li>
-<a class="page-scroll" href="#contact">Contact</a>
-</li>
-<li>
+                        <ul class="mobile-menu">
+                                <li>
+                                        <a class="page-scroll" href="#hero-area">Home</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#services">Services</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#features">Features</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#portfolios">Products</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#pricing">Pricing</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#team">Team</a>
+                                </li>
+                                <li>
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                </li>
+                                <!-- <li>
 <a class="page-scroll" data-toggle="modal" data-target="#myModal">Login</a>
-</li>
-</ul>
+</li> -->
+                        </ul>
 
- </nav>
+                </nav>
 
-<div class="container">
-<div class="row justify-content-md-center">
-<div class="col-md-10">
-<div class="contents text-center">
-<h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Laptop and Computers: Sale and repair</h1>
-<p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">our deals in used laptop, desktop & hardwares</p>
-</div>
-</div>
-</div>
-</div>
-</header>
-
-
-<section id="services" class="section">
-<div class="container">
-<div class="section-header">
-<h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Our Services</h2>
-<hr class="lines wow zoomIn" data-wow-delay="0.3s">
-<p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Selling and repairing of all types of laptop and computer hardwares.<br> </p>
-</div>
-<div class="row">
-<div class="col-md-6 col-sm-6">
-<div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-<div class="icon"><i class="fa fa-shopping-cart"></i>
-</div>
-<h4>Selling</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-</div>
-</div>
-<div class="col-md-6 col-sm-6">
-<div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
-<div class="icon">
-<i class="fa fa-wrench"></i>
-</div>
-<h4>Repairing</h4>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+                <div class="container">
+                        <div class="row justify-content-md-center">
+                                <div class="col-md-10">
+                                        <div class="contents text-center">
+                                                <h1 class="wow fadeInDown" data-wow-duration="1000ms"
+                                                        data-wow-delay="0.3s">Laptop and Computers: Sale and repair</h1>
+                                                <p class="lead  wow fadeIn" data-wow-duration="1000ms"
+                                                        data-wow-delay="400ms">our deals in used laptop, desktop &
+                                                        hardwares</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </header>
 
 
-<section id="features" class="section" data-stellar-background-ratio="0.05">
-<div class="container">
-<div class="section-header">
-<h2 class="section-title">Some Features</h2>
-<hr class="lines">
-<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-</div>
-<div class="row">
-<div class="col-lg-8 col-md-12 col-xs-12">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-<span class="icon">
-<i class="fa fa-cog"></i>
-</span>
-<div class="text">
-<h4>Mother Board Repair</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-<span class="icon">
-<i class="fa fa-files-o"></i>
-</span>
-<div class="text">
-<h4> Bios Updating</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-<span class="icon">
-<i class="fa fa-repeat"></i>
-</span>
-<div class="text">
-<h4>Data Recovery</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6 col-xs-12 box-item">
-<span class="icon">
-<i class="fa fa-money"></i>
-</span>
-<div class="text">
-<h4>Low Cost</h4>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="show-box">
-<img class="img-fulid" src="/static/img/laptop1.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</section>
+        <section id="services" class="section">
+                <div class="container">
+                        <div class="section-header">
+                                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                                        Our Services</h2>
+                                <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+                                <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+                                        Selling and repairing of all types of laptop and computer hardwares.<br> </p>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                        <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+                                                <div class="icon"><i class="fa fa-shopping-cart"></i>
+                                                </div>
+                                                <h4>Selling</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                        nonummy nibh euismod tincidunt ut.</p>
+                                        </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                        <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
+                                                <div class="icon">
+                                                        <i class="fa fa-wrench"></i>
+                                                </div>
+                                                <h4>Repairing</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                        nonummy nibh euismod tincidunt ut.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
 
-<section id="portfolios" class="section">
+        <section id="features" class="section" data-stellar-background-ratio="0.05">
+                <div class="container">
+                        <div class="section-header">
+                                <h2 class="section-title">Some Features</h2>
+                                <hr class="lines">
+                                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-8 col-md-12 col-xs-12">
+                                        <div class="container">
+                                                <div class="row">
+                                                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                                                                <span class="icon">
+                                                                        <i class="fa fa-cog"></i>
+                                                                </span>
+                                                                <div class="text">
+                                                                        <h4>Mother Board Repair</h4>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                                printing and typesetting industry.</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                                                                <span class="icon">
+                                                                        <i class="fa fa-files-o"></i>
+                                                                </span>
+                                                                <div class="text">
+                                                                        <h4> Bios Updating</h4>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                                printing and typesetting industry.</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                                                                <span class="icon">
+                                                                        <i class="fa fa-repeat"></i>
+                                                                </span>
+                                                                <div class="text">
+                                                                        <h4>Data Recovery</h4>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                                printing and typesetting industry</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                                                                <span class="icon">
+                                                                        <i class="fa fa-money"></i>
+                                                                </span>
+                                                                <div class="text">
+                                                                        <h4>Low Cost</h4>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                                printing and typesetting industry</p>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="show-box">
+                                                <img class="img-fulid" src="/static/img/laptop1.png" alt="">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
-<div class="container">
-<div class="section-header">
-<h2 class="section-title">Our Products</h2>
-<hr class="lines">
-<p class="section-subtitle">Laptops Computers Hardwares</p>
-</div>
-<div class="row">
-<div class="col-md-12">
 
-<div class="controls text-center">
-<a class="filter active btn btn-common" data-filter="all">
-All
-</a>
-<a class="filter btn btn-common" data-filter=".design">
-Laptops
-</a>
-<a class="filter btn btn-common" data-filter=".computer">
-computers
-</a>
-<a class="filter btn btn-common" data-filter=".print">
-Hardwares
-</a>
-</div>
+        <section id="portfolios" class="section">
 
-</div>
-</div>
-</div>
-</section>
-<!-- 
+                <div class="container">
+                        <div class="section-header">
+                                <h2 class="section-title">Our Products</h2>
+                                <hr class="lines">
+                                <p class="section-subtitle">Laptops Computers Hardwares</p>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-12">
+
+                                        <div class="controls text-center">
+                                                <a class="filter active btn btn-common" data-filter="all">
+                                                        All
+                                                </a>
+                                                <a class="filter btn btn-common" data-filter=".design">
+                                                        Laptops
+                                                </a>
+                                                <a class="filter btn btn-common" data-filter=".computer">
+                                                        computers
+                                                </a>
+                                                <a class="filter btn btn-common" data-filter=".print">
+                                                        Hardwares
+                                                </a>
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- 
 
 <section class="video-promo section">
 <div class="container">
@@ -311,266 +335,302 @@ Hardwares
 </div>
 </div>
 </section> -->
-<div id="pricing" class="section pricing-section">
-<div class="container">
-<div class="section-header">
-<h2 class="section-title">Pricing Table</h2>
-<hr class="lines">
-<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-</div>
-<div class="row pricing-tables">
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="pricing-table">
-<div class="pricing-details">
-<h2>Laptops</h2>
-<span><h5>starting Rs.7000</h5></span>
-<ul>
-<li>Core i3</li>
-<li>Core i5</li>
-<li>Core i7</li>
-<li></li>
-</ul>
-</div>
-<div class="plan-button">
-<a href="#" class="btn btn-common">Explore</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="pricing-table">
-<div class="pricing-details">
-<h2>Computers</h2>
-<span>$3.99</span>
-<ul>
-<li>Consectetur adipiscing</li>
-<li>Nunc luctus nulla et tellus</li>
-<li>Suspendisse quis metus</li>
-<li>Vestibul varius fermentum erat</li>
-</ul>
-</div>
-<div class="plan-button">
-<a href="#" class="btn btn-common">Explore</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="pricing-table">
-<div class="pricing-details">
-<h2>Hardwares</h2>
-<span>$9.50</span>
-<ul>
-<li>Mother Boards</li>
-<li>Hard Disks</li>
-<li>RAM</li>
-<li>CPU</li>
-<li>....</li>
-</ul>
-</div>
-<div class="plan-button">
-<a href="#" class="btn btn-common">Explore</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        <div id="pricing" class="section pricing-section">
+                <div class="container">
+                        <div class="section-header">
+                                <h2 class="section-title">Pricing Table</h2>
+                                <hr class="lines">
+                                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="row pricing-tables">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="pricing-table">
+                                                <div class="pricing-details">
+                                                        <h2>Laptops</h2>
+                                                        <span>
+                                                                <h5>starting Rs.7000</h5>
+                                                        </span>
+                                                        <ul>
+                                                                <li>Core i3</li>
+                                                                <li>Core i5</li>
+                                                                <li>Core i7</li>
+                                                                <li></li>
+                                                        </ul>
+                                                </div>
+                                                <div class="plan-button">
+                                                        <a href="#" class="btn btn-common">Explore</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="pricing-table">
+                                                <div class="pricing-details">
+                                                        <h2>Computers</h2>
+                                                        <span>$3.99</span>
+                                                        <ul>
+                                                                <li>Consectetur adipiscing</li>
+                                                                <li>Nunc luctus nulla et tellus</li>
+                                                                <li>Suspendisse quis metus</li>
+                                                                <li>Vestibul varius fermentum erat</li>
+                                                        </ul>
+                                                </div>
+                                                <div class="plan-button">
+                                                        <a href="#" class="btn btn-common">Explore</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="pricing-table">
+                                                <div class="pricing-details">
+                                                        <h2>Hardwares</h2>
+                                                        <span>$9.50</span>
+                                                        <ul>
+                                                                <li>Mother Boards</li>
+                                                                <li>Hard Disks</li>
+                                                                <li>RAM</li>
+                                                                <li>CPU</li>
+                                                                <li>....</li>
+                                                        </ul>
+                                                </div>
+                                                <div class="plan-button">
+                                                        <a href="#" class="btn btn-common">Explore</a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
 
 
-<div class="counters section" data-stellar-background-ratio="0.05">
-<div class="container">
-<div class="row">
-<div class="col-sm-6 col-md-3 col-lg-3">
-<div class="facts-item">
-<div class="icon">
-<i class="fa fa-pencil-square-o"></i>
-</div>
-<div class="fact-count">
-        <h4>Established in</h4>
-<h3><span class="counter">2000</span></h3>
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3">
-<div class="facts-item">
-<div class="icon">
-<i class="fa fa-briefcase"></i>
-</div>
-<div class="fact-count">
-        <h4>Working Hours</h4>
-        <h3><span class="counter">24</span></h3>
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3">
-<div class="facts-item">
-<div class="icon">
-<i class="fa fa-user"></i>
-</div>
-<div class="fact-count">
-        <h4>Working Days</h4>
-        <h3><span class="counter">7</span></h3>
-</div>
-</div>
-</div>
-<div class="col-sm-6 col-md-3 col-lg-3">
-<div class="facts-item">
-<div class="icon">
-<i class="fa fa-heart"></i>
-</div>
-<div class="fact-count">
-        <h4>Happy Customers</h4>
-        <h3><span class="counter">2000</span></h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        <div class="counters section" data-stellar-background-ratio="0.05">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <div class="facts-item">
+                                                <div class="icon">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                </div>
+                                                <div class="fact-count">
+                                                        <h4>Established in</h4>
+                                                        <h3><span class="counter">2000</span></h3>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <div class="facts-item">
+                                                <div class="icon">
+                                                        <i class="fa fa-briefcase"></i>
+                                                </div>
+                                                <div class="fact-count">
+                                                        <h4>Working Hours</h4>
+                                                        <h3><span class="counter">24</span></h3>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <div class="facts-item">
+                                                <div class="icon">
+                                                        <i class="fa fa-user"></i>
+                                                </div>
+                                                <div class="fact-count">
+                                                        <h4>Working Days</h4>
+                                                        <h3><span class="counter">7</span></h3>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-3">
+                                        <div class="facts-item">
+                                                <div class="icon">
+                                                        <i class="fa fa-heart"></i>
+                                                </div>
+                                                <div class="fact-count">
+                                                        <h4>Happy Customers</h4>
+                                                        <h3><span class="counter">2000</span></h3>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
 
 
-<section id="team" class="section">
-<div class="container">
-<div class="section-header">
-<h2 class="section-title">Our Team</h2>
-<hr class="lines">
-<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-</div>
-<div class="row">
-        <pre>                     </pre>
-<div class="col-lg-3 col-md-6 col-xs-12">
-<div class="single-team">
-<img src="/static/img/team/team1.jpg" alt="">
-<div class="team-details">
-<div class="team-inner">
-<h4 class="team-title">Nitin Garg</h4>
-<ul class="social-list">
-<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li class="google-plus"><a href="#"><i class="fa fa-envelope"></i></a></li>
-<li class="phone"><a href="#"><i class="fa fa-phone"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+        <section id="team" class="section">
+                <div class="container">
+                        <div class="section-header">
+                                <h2 class="section-title">Our Team</h2>
+                                <hr class="lines">
+                                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="row">
+                                <pre>                     </pre>
+                                <div class="col-lg-3 col-md-6 col-xs-12">
+                                        <div class="single-team">
+                                                <img src="/static/img/team/team1.jpg" alt="">
+                                                <div class="team-details">
+                                                        <div class="team-inner">
+                                                                <h4 class="team-title">Nitin Garg</h4>
+                                                                <ul class="social-list">
+                                                                        <li class="facebook"><a href="#"><i
+                                                                                                class="fa fa-facebook"></i></a>
+                                                                        </li>
+                                                                        <li class="google-plus"><a href="#"><i
+                                                                                                class="fa fa-envelope"></i></a>
+                                                                        </li>
+                                                                        <li class="phone"><a href="#"><i
+                                                                                                class="fa fa-phone"></i></a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
 
 
-<pre>                              </pre>
-<div class="col-lg-3 col-md-6 col-xs-12">
-<div class="single-team">
-<img src="/static/img/team/team2.jpg" alt="">
-<div class="team-details">
-<div class="team-inner">
-<h4 class="team-title">Anil Agrawal</h4>
-<ul class="social-list">
-<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li class="google-plus"><a href="#"><i class="fa fa-envelope"></i></a></li>
-<li class="phone"><a href="#"><i class="fa fa-phone"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                                <pre>                              </pre>
+                                <div class="col-lg-3 col-md-6 col-xs-12">
+                                        <div class="single-team">
+                                                <img src="/static/img/team/team2.jpg" alt="">
+                                                <div class="team-details">
+                                                        <div class="team-inner">
+                                                                <h4 class="team-title">Anil Agrawal</h4>
+                                                                <ul class="social-list">
+                                                                        <li class="facebook"><a href="#"><i
+                                                                                                class="fa fa-facebook"></i></a>
+                                                                        </li>
+                                                                        <li class="google-plus"><a href="#"><i
+                                                                                                class="fa fa-envelope"></i></a>
+                                                                        </li>
+                                                                        <li class="phone"><a href="#"><i
+                                                                                                class="fa fa-phone"></i></a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
 
 
 
-</div>
-</div>
-</section>
+                        </div>
+                </div>
+        </section>
 
 
-<div id="testimonial" class="section" data-stellar-background-ratio="0.1">
-<div class="container">
-<div class="row justify-content-md-center">
-<div class="col-md-12">
-<div class="touch-slider owl-carousel owl-theme">
-<div class="testimonial-item">
-<img src="/static/img/portfolio/laptop1.png" alt="Client Testimonoal" >
-</div>
-<div class="testimonial-item">
-<img src="/static/img/portfolio/laptop2.png" alt="Client Testimonoal" >
-</div>
-<div class="testimonial-item">
-<img src="/static/img/portfolio/laptop3.png" alt="Client Testimonoal" >
-</div>
-<div class="testimonial-item">
-<img src="/static/img/testimonial/customer3.jpg" alt="Client Testimonoal" >
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
+                <div class="container">
+                        <div class="row justify-content-md-center">
+                                <div class="col-md-12">
+                                        <div class="touch-slider owl-carousel owl-theme">
+                                                <div class="testimonial-item">
+                                                        <img src="/static/img/portfolio/laptop1.png"
+                                                                alt="Client Testimonoal">
+                                                </div>
+                                                <div class="testimonial-item">
+                                                        <img src="/static/img/portfolio/laptop2.png"
+                                                                alt="Client Testimonoal">
+                                                </div>
+                                                <div class="testimonial-item">
+                                                        <img src="/static/img/portfolio/laptop3.png"
+                                                                alt="Client Testimonoal">
+                                                </div>
+                                                <div class="testimonial-item">
+                                                        <img src="/static/img/testimonial/customer3.jpg"
+                                                                alt="Client Testimonoal">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
 
-<section id="contact" class="section" data-stellar-background-ratio="-0.2">
-<div class="contact-form">
-<div class="container">
-<div class="row" style="text-align:center;">
-<div class="col-lg-12 col-sm-6 col-xs-12">
-<div class="contact-us">
-<h3>Contact With us</h3>
-<div class="contact-address">
-<p>Shop No. 112, Om Shubham Tower,<br> Opp. Nehru Ground, Neelam Bata Road,<br> N.I.T. Faridabad</p>
-<p class="phone">Phone: <span>(+94 123 456 789)</span></p>
-<p class="email">E-mail: <a href=""><span>agrawalraghav669@gmail.com</span></a></p>
-</div>
-<div class="social-icons">
-<ul>
-<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="twitter"><a href="#"><i class="fa fa-phone"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <section id="contact" class="section" data-stellar-background-ratio="-0.2">
+                <div class="contact-form">
+                        <div class="container">
+                                <div class="row" style="text-align:center;">
+                                        <div class="col-lg-12 col-sm-6 col-xs-12">
+                                                <div class="contact-us">
+                                                        <h3>Contact With us</h3>
+                                                        <div class="contact-address">
+                                                                <p>Shop No. 112, Om Shubham Tower,<br> Opp. Nehru
+                                                                        Ground, Neelam Bata Road,<br> N.I.T. Faridabad
+                                                                </p>
+                                                                <p class="phone">Phone: <span>(+94 123 456 789)</span>
+                                                                </p>
+                                                                <p class="email">E-mail: <a
+                                                                                href=""><span>agrawalraghav669@gmail.com</span></a>
+                                                                </p>
+                                                        </div>
+                                                        <div class="social-icons">
+                                                                <ul>
+                                                                        <li class="facebook"><a href="#"><i
+                                                                                                class="fa fa-facebook"></i></a>
+                                                                        </li>
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li
+                                                                                class="twitter"><a href="#"><i
+                                                                                                class="fa fa-phone"></i></a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
 
-<footer>
-<div class="container">
-<div class="row">
+        <footer>
+                <div class="container">
+                        <div class="row">
 
-<div class="col-lg-12 col-sm-6 col-xs-12">
-<div class="copyright">
-<p>All copyrights reserved &copy; 2018 - Designed & Developed by Raghav Agrawal</p>
-</div>
-</div>
-</div>
-</div>
-</footer>
+                                <div class="col-lg-12 col-sm-6 col-xs-12">
+                                        <div class="copyright">
+                                                <p>All copyrights reserved &copy; 2018 - Designed & Developed by Raghav
+                                                        Agrawal</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </footer>
 
 
-<a href="#" class="back-to-top">
-<i class="fa fa-arrow-up"></i>
-</a>
-<div id="loader">
-<div class="spinner">
-<div class="double-bounce1"></div>
-<div class="double-bounce2"></div>
-</div>
-</div>
+        <a href="#" class="back-to-top">
+                <i class="fa fa-arrow-up"></i>
+        </a>
+        <div id="loader">
+                <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                </div>
+        </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="/static/js/jquery-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="/static/js/jquery.mixitup.js"></script>
-<script src="/static/js/nivo-lightbox.js"></script>
-<script src="/static/js/owl.carousel.js"></script>
-<script src="/static/js/jquery.stellar.min.js"></script>
-<script src="/static/js/jquery.nav.js"></script>
-<script src="/static/js/scrolling-nav.js"></script>
-<script src="/static/js/jquery.easing.min.js"></script>
-<script src="/static/js/smoothscroll.js"></script>
-<script src="/static/js/jquery.slicknav.js"></script>
-<script src="/static/js/wow.js"></script>
-<script src="/static/js/jquery.vide.js"></script>
-<script src="/static/js/jquery.counterup.min.js"></script>
-<script src="/static/js/jquery.magnific-popup.min.js"></script>
-<script src="/static/js/waypoints.min.js"></script>
-<script src="/static/js/form-validator.min.js"></script>
-<script src="/static/js/contact-form-script.js"></script>
-<script src="/static/js/main.js"></script>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="/static/js/jquery-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script src="/static/js/jquery.mixitup.js"></script>
+        <script src="/static/js/nivo-lightbox.js"></script>
+        <script src="/static/js/owl.carousel.js"></script>
+        <script src="/static/js/jquery.stellar.min.js"></script>
+        <script src="/static/js/jquery.nav.js"></script>
+        <script src="/static/js/scrolling-nav.js"></script>
+        <script src="/static/js/jquery.easing.min.js"></script>
+        <script src="/static/js/smoothscroll.js"></script>
+        <script src="/static/js/jquery.slicknav.js"></script>
+        <script src="/static/js/wow.js"></script>
+        <script src="/static/js/jquery.vide.js"></script>
+        <script src="/static/js/jquery.counterup.min.js"></script>
+        <script src="/static/js/jquery.magnific-popup.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/form-validator.min.js"></script>
+        <script src="/static/js/contact-form-script.js"></script>
+        <script src="/static/js/main.js"></script>
 </body>
+
 </html>
